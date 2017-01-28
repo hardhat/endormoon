@@ -2,14 +2,16 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 4
+  serializedVersion: 6
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: AircraftWingsPropellersWhite
-  m_Shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 10753, guid: 0000000000000000e000000000000000, type: 0}
   m_ShaderKeywords: _LIGHTMAPPING_STATIC_LIGHTMAPS _NORMALMAP _UVPRIM_UV1 _UVSEC_UV1
-  m_CustomRenderQueue: -1
+  m_LightmapFlags: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -36,14 +38,14 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _EmissionMap
+          name: _ParallaxMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _ParallaxMap
+          name: _SpecGlossMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -57,7 +59,7 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _SpecGlossMap
+          name: _EmissionMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -86,18 +88,6 @@ Material:
     m_Floats:
       data:
         first:
-          name: _Shininess
-        second: .0745405555
-      data:
-        first:
-          name: _AlphaTestRef
-        second: .5
-      data:
-        first:
-          name: _Lightmapping
-        second: 0
-      data:
-        first:
           name: _SrcBlend
         second: 1
       data:
@@ -106,16 +96,36 @@ Material:
         second: 0
       data:
         first:
+          name: _Cutoff
+        second: 0.5
+      data:
+        first:
+          name: _AlphaTestRef
+        second: 0.5
+      data:
+        first:
+          name: _Shininess
+        second: 0.074540555
+      data:
+        first:
+          name: PixelSnap
+        second: 0
+      data:
+        first:
           name: _Parallax
-        second: .0199999996
+        second: 0.02
       data:
         first:
           name: _ZWrite
         second: 1
       data:
         first:
+          name: _UVPrim
+        second: 0
+      data:
+        first:
           name: _Glossiness
-        second: .150000006
+        second: 0.15
       data:
         first:
           name: _BumpScale
@@ -126,49 +136,53 @@ Material:
         second: 1
       data:
         first:
-          name: _DetailNormalMapScale
-        second: 1
-      data:
-        first:
-          name: _UVSec
-        second: 0
-      data:
-        first:
-          name: _Mode
-        second: 0
-      data:
-        first:
-          name: _EmissionScaleUI
-        second: 1
-      data:
-        first:
           name: _EmissionScale
         second: 1
+      data:
+        first:
+          name: _Lightmapping
+        second: 0
       data:
         first:
           name: _DetailAlbedoMultiplier
         second: 2
       data:
         first:
-          name: _UVPrim
+          name: _UVSec
+        second: 0
+      data:
+        first:
+          name: _DetailNormalMapScale
+        second: 1
+      data:
+        first:
+          name: _Mode
         second: 0
       data:
         first:
           name: _DetailMode
         second: 0
+      data:
+        first:
+          name: _EmissionScaleUI
+        second: 1
     m_Colors:
       data:
         first:
           name: _EmissionColor
-        second: {r: 0, g: 0, b: 0, a: .99999994}
+        second: {r: 0, g: 0, b: 0, a: 0.99999994}
       data:
         first:
           name: _Color
-        second: {r: 1, g: 1, b: 1, a: 1}
+        second: {r: 0.9862069, g: 1, b: 0, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: 0.09803922, g: 0.09803922, b: 0.09803922, a: 1}
       data:
         first:
           name: _SpecularColor
-        second: {r: .200000003, g: .200000003, b: .200000003, a: 1}
+        second: {r: 0.2, g: 0.2, b: 0.2, a: 1}
       data:
         first:
           name: _EmissionColorUI
@@ -177,7 +191,3 @@ Material:
         first:
           name: _EmissionColorWithMapUI
         second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
-          name: _SpecColor
-        second: {r: .0980392173, g: .0980392173, b: .0980392173, a: 1}

@@ -93,6 +93,10 @@ Material:
         second: 0.5
       data:
         first:
+          name: PixelSnap
+        second: 0
+      data:
+        first:
           name: _Parallax
         second: 0.02
       data:
@@ -125,6 +129,10 @@ Material:
         second: 0
       data:
         first:
+          name: _InvFade
+        second: 1
+      data:
+        first:
           name: _Metallic
         second: 0
     m_Colors:
@@ -135,4 +143,8 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 0.7254902, g: 0, b: 0, a: 1}
+        second: {r: 1, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _EmisColor
+        second: {r: 0.2, g: 0.2, b: 0.2, a: 0}
