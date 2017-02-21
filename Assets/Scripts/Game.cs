@@ -2,10 +2,7 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class Score : MonoBehaviour {
-
-    public int score;
-    public GameObject explosionPrefab;
+public class Game : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -17,9 +14,9 @@ public class Score : MonoBehaviour {
 	
 	}
 
-    public void MainMenu()
+    public void PlayGame()
     {
-        StartCoroutine(launchAfterDelay(0));
+        StartCoroutine(launchAfterDelay(1));
     }
 
     public IEnumerator launchAfterDelay(int index)
